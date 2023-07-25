@@ -6,22 +6,26 @@ body{
     align-items: center;
     height: 100vh;
     flex-direction: column;
+    background-color: #0e1501;
+    font-family: sans-serif;
+    font-size: 32px;
+    color:#923303b3;
 }
 
 #gameboard{
     width: 300px;
     height: 300px;
-    background-color: white;
     display:flex;
     flex-wrap: wrap;
-    border: solid 1px;
+    border: solid 2px #65240494;
+    border-radius: 1.5%;
 }
 
 .square{
  width:100px;
  height: 100px;
- background-color: white;
- border: 2px solid aqua;
+ background-color: transparent;
+ border: 2px solid #65240494;
  box-sizing: border-box;
  display:flex;
  justify-content: center;
@@ -32,7 +36,7 @@ body{
     height: 90px;
     width: 90px;
     border-radius: 50%;
-    border: 15px solid blue;
+    border: 15px solid #aebd38;
     box-sizing: border-box;
 }
 
@@ -46,7 +50,7 @@ body{
 .cross:before, .cross:after{
     content:"";
     position: absolute;
-    background-color: red;
+    background-color: #598234
 }
 
 .cross:before{
@@ -61,4 +65,19 @@ body{
     height:30%;
     margin-top: -15%;
     width: 100%;  
+}
+
+#replay{
+  padding: 10px 20px;
+  border: 1px solid #652404c8;
+  border-radius: 50px;
+  background-color: transparent;
+  color: #652404c8;
+  font-size: 16px;
+  transition: transform 0.3s ease
+}
+
+#replay:hover{
+    transform: scale(1.1);
+    background-color: #ff5906b7;
 }
